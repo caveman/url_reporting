@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url: testURL
+  referrer: test_ref
+  hash: MyString
+  created_at: <%= 5.day.ago %>
+
+two:
+  url: testurl2
+  referrer: test_ref2
+  hash: MyString2
+  created_at: <%= 5.day.ago %>

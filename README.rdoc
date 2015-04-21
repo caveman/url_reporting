@@ -3,26 +3,12 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
 * Database creation
+<tt>rake db:create db:migrate</tt>
 
 * Database initialization
+After creating and migrating database, seed database with (1 million records, should take around 10 mins): 
+<tt>rake db:seed</tt>.
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+<tt>rake test</tt>.

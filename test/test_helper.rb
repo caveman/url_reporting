@@ -6,15 +6,13 @@ require 'rails/test_help'
 #load seed data instead of fixtures
 seed_urls = ['http://apple.com', 'https://apple.com', 'https://www.apple.com', 'http://developer.apple.com','http://en.wikipedia.org', 'http://opensource.org']
 seed_referrers = ['http://apple.com', 'https://apple.com', 'https://www.apple.com','http://developer.apple.com', nil ]
-1000.times do |i|
-  # puts "Creating seed link #{i}"
+10000.times do |i|
   #Digest::MD5.hexdigest({id:1, url: 'http://apple.com', referrer: 'http://store.apple.com/us', created_at: Time.parse('2012-01-01')}.to_s)` 
   view = View.insert({ 
   	url: seed_urls[rand(seed_urls.size-1)], 
   	referrer: seed_referrers[rand(seed_urls.size-1)],
   	created_at: Time.now-rand(9).day
   })
-  #Digest::MD5.hexdigest(view.to_s)
 end
 
 # class ActiveSupport::TestCase

@@ -11,3 +11,31 @@ Seed database with 1 million records (should take around 10 mins):
 * Run Tests 
 Test suite will load 1 million records
   rake test
+
+### Report #1
+
+The end-user should be able to access a REST endpoint in your application in order to retrieve the number of page views per URL, grouped by day, for the past 5 days.
+
+Example request:
+  [GET] /top_urls
+
+Payload
+  > { '2012-01-01' : [ { 'url': 'http://apple.com', 'visits': 100 } ] }
+
+### Report #2
+
+Your end-users should be able to retrieve the top 5 referrers for the top 10 URLs grouped by day, for the past 5 days, via a REST endpoint.
+
+Example request:
+  [GET] /top_referrers
+
+Payload
+  > {
+  >	'2012-01-01' : [
+  >		{
+  >			'url': 'http://apple.com',
+  >			'visits': 100,
+  >			'referrers': [ { 'url': 'http://store.apple.com/us', 'visits': 10 } ]
+  >		}
+  >	]
+  >}

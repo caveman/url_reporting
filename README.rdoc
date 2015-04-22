@@ -1,11 +1,13 @@
 == README
 
-* Database creation
+* Database creation: 
+Create Database and run initial migration
   rake db:create db:migrate
 
-* Database initialization
-After creating and migrating database, seed database with (1 million records, should take around 10 mins): 
+* Database initialization:
+Seed database with 1 million records (should take around 10 mins): 
   rake db:seed
 
-* Run tests
+* Run Tests 
+Test suite will load 1 million records
   rake test

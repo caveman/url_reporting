@@ -1,0 +1,23 @@
+<h1>Views#index</h1>
+<div ng-controller="viewListCtrl">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Url</th>
+        <th>Referrer</th>
+        <th>Created</th>
+        <th>Hash</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="view in views">
+        <td>{{view.id}}</td>
+        <td>{{view.url}}</td>
+        <td>{{view.referrer}}</td>
+        <td>{{view.created_at}}</td>
+        <td>{{view.hash}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

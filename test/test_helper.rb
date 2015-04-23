@@ -2,7 +2,6 @@ ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 
-
 #load seed data instead of fixtures
 seed_urls = ['http://apple.com', 'https://apple.com', 'https://www.apple.com', 'http://developer.apple.com','http://en.wikipedia.org', 'http://opensource.org']
 seed_referrers = ['http://apple.com', 'https://apple.com', 'https://www.apple.com','http://developer.apple.com', nil ]
